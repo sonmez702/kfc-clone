@@ -34,23 +34,26 @@ img{
     text-decoration: none;
 }
 
-header nav ul{
+nav ul{
     display: flex;
+}
+
+ul{
     list-style: none;
 }
 
-header nav ul li{
+nav ul li{
     margin-right: 16px;
 }
 
-header nav ul li a{
+ul li a{
     text-decoration: none;
     color: black;
     transition: all 0.2s ease-in-out;
     font-weight: 500;
 }
 
-header nav ul li a:hover{
+ul li a:hover{
     color: #ff0000;
 }
 
@@ -120,12 +123,6 @@ img{
   background-color: rgba(0,0,0,0.8);
 }
 
-@media screen and (max-width: 600px) {
-    .xususiteklifler div img{
-        width: 180px;
-    }
-}
-
 #modal-overlay{
     position: fixed;
     top: 0;
@@ -172,4 +169,63 @@ button{
     align-items: center;
     z-index: 1;
     background: #fff;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex div{
+    width: 260px;
+    border-radius: 10px;
+    background: #fff;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.flex div:hover{
+    transform: scale(1.1);
+}
+
+.flex div img{
+    width: 100%;
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.menu .left{
+    width: 20%;
+    background: #ccc;
+    padding: 20px;
+}
+
+.active{
+    color: #df3333;
+}
+
+@media screen and (max-width: 600px) {
+    .xususiteklifler div img{
+        width: 180px;
+    }
+    .menu .left{
+        width: 100%;
+    }
+}
+
+.price{
+    color: #df3333;
+}
+
+.left, .right .flex div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
