@@ -29,26 +29,10 @@ function closeModal(){
     document.getElementById('modal-overlay').style.display = 'none';
     document.getElementById('modal').style.display = 'none';
 }
-function openModal(id){
-    if(id == 1){
-        document.getElementById('modal-overlay').style.display = 'flex';
-        document.getElementById('modal').style.display = 'flex';
-        document.getElementById('img').src = document.getElementById('img1').src;
-        document.getElementById('title').innerHTML = 'MEGA ROLL 1+1';
-        document.getElementById('price').innerHTML = '8.90 AZN';
-    }
-    if(id == 2){
-        document.getElementById('modal-overlay').style.display = 'flex';
-        document.getElementById('modal').style.display = 'flex';
-        document.getElementById('img').src = document.getElementById('img2').src;
-        document.getElementById('title').innerHTML = 'EKSKLUZIV KOMBO';
-        document.getElementById('price').innerHTML = '21.60 AZN';
-    }
-    if(id == 3){
-        document.getElementById('modal-overlay').style.display = 'flex';
-        document.getElementById('modal').style.display = 'flex';
-        document.getElementById('img').src = document.getElementById('img3').src;
-        document.getElementById('title').innerHTML = 'AİLƏVİ KOMBO';
-        document.getElementById('price').innerHTML = '43.60 AZN';
-    }
+function openModal(e){
+    document.getElementById('img').src = e.children[0].src;
+    document.getElementById('title').textContent = e.children[1].textContent;
+    document.getElementById('price').textContent = e.children[2].textContent;
+    document.getElementById('modal-overlay').style.display = 'block';
+    document.getElementById('modal').style.display = 'flex';
 }
