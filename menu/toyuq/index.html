@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyuq</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="modal-overlay" style="display: none;">
+        <div id="modal">
+            <img id="img">
+            <p id="title"></p>
+            <p id="price"></p>
+            <button onclick="closeModal()">Bağla</button>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="https://kfc.az/_next/static/media/logo.ada03bf3.svg" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../#xususiteklifler">XÜSUSİ TƏKLİFLƏR</a></li>
+                <li><a href="../index.html">MENYU</a></li>
+                <li><a href="../../about.html">HAQQIMIZDA</a></li>
+                <li><a href="../../contact.html">ƏLAQƏ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="menu">
+        <div class="left">
+            <ul>
+                <li><a href="../index.html">SENDVİÇLƏR</a></li>
+                <li><a href="../burger/index.html">BURGERLƏR</a></li>
+                <li><a href="../toyuq/index.html" class="active">TOYUQ</a></li>
+                <li><a href="../drinks/index.html">İÇKİLƏR</a></li>
+            </ul>   
+        </div>
+        <div class="right">
+            <div class="flex">
+                <div onclick="openModal(this)">
+                    <img src="https://kfc.az/_next/image?url=https%3A%2F%2F16a9564f-f8ec-42ba-a998-3027aa809e50.selstorage.ru%2Fkfc-az-co%2F55360%2Fimages%2Fitems%2F7ee71a754eac247a1c1fe62c21e3cc29.PNG&w=828&q=75" alt="">
+                    <p>BAYTS S</p>
+                    <p class="price">4.5 AZN</p>
+                </div>
+                <div onclick="openModal(this)">
+                    <img src="https://kfc.az/_next/image?url=https%3A%2F%2F16a9564f-f8ec-42ba-a998-3027aa809e50.selstorage.ru%2Fkfc-az-co%2F55360%2Fimages%2Fitems%2F7ee71a754eac247a1c1fe62c21e3cc29.PNG&w=828&q=75" alt="">
+                    <p>BAYTS M</p>
+                    <p class="price">5.5 AZN</p>
+                </div>
+                <div onclick="openModal(this)">
+                    <img src="https://kfc.az/_next/image?url=https%3A%2F%2F16a9564f-f8ec-42ba-a998-3027aa809e50.selstorage.ru%2Fkfc-az-co%2F55360%2Fimages%2Fitems%2F7ee71a754eac247a1c1fe62c21e3cc29.PNG&w=828&q=75" alt="">
+                    <p>BAYTS L</p>
+                    <p class="price">6.5 AZN</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 KFC AZ. Bütün hüquqlar qorunur.</p>
+    </footer>
+    <script src="../../script.js"></script>
+</body>
+</html>
