@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            position: relative;
+        }
+        .about-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://i0.wp.com/www.toastykettle.com/wp-content/uploads/2020/02/KFC.jpg?resize=750%2C421&ssl=1') center center/cover no-repeat;
+            opacity: 0.6;
+        }
+        .about-content {
+            top: 4rem;
+            position: relative;
+            z-index: 0;
+            padding: 60px 40px;
+            max-width: 900px;
+            color: white;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-bg"></div>
+    <header>
+        <div class="logo">
+            <img src="https://kfc.az/_next/static/media/logo.ada03bf3.svg" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html#xususiteklifler">XÜSUSİ TƏKLİFLƏR</a></li>
+                <li><a href="./menu/index.html">MENYU</a></li>
+                <li><a href="./about.html">HAQQIMIZDA</a></li>
+                <li><a href="./contact.html" class="active">ƏLAQƏ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-content">
+            <h1>Əlaqə</h1>
+            <br>
+            <input type="text" placeholder="Adınız">
+            <input type="text" placeholder="Soyadınız">
+            <input type="text" placeholder="Emailiniz">
+            <input type="text" placeholder="Telefon nömrəniz">
+            <textarea placeholder="Mesajınız"></textarea>
+            <button>Göndərmək</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 KFC AZ. Bütün hüquqlar qorunur.</p>
+    </footer>
+</body>
+</html>
